@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LimpezaX - Limpeza que protege</title>
+  <meta name="description" content="LimpezaX é uma empresa de limpeza profissional focada em saúde e prevenção de doenças.">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./logo.png" type="image/png">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="./logo.png" alt="Logo LimpezaX" class="logo">
+      <h1>LimpezaX</h1>
+      <p class="slogan">Limpeza que protege</p>
+      <a href="#contato" class="btn-principal">Entre em Contato</a>
+    </div>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre nós</h2>
+    <p>
+      A <strong>LimpezaX</strong> é uma empresa de limpeza profissional com foco em saúde e prevenção de doenças, localizada no Centro do Rio de Janeiro (RJ).
+      Fundada por um médico, a empresa nasceu com o propósito de transformar a limpeza em uma ferramenta de promoção da saúde, unindo conhecimento técnico, biossegurança e cuidado humano.
+    </p>
+    <p>
+      Atuamos na higienização e desinfecção de ambientes residenciais e corporativos, com técnicas e produtos de alta eficiência que reduzem a circulação de microrganismos e promovem bem-estar.
+    </p>
+    <p>
+      Nosso diferencial é enxergar a limpeza sob a ótica da medicina preventiva — não apenas eliminar sujeira, mas proteger pessoas e espaços contra doenças.
+    </p>
+  </section>
+
+  <section class="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>🧽 Limpeza e desinfecção de ambientes residenciais e comerciais</li>
+      <li>🏢 Higienização técnica em clínicas, academias e condomínios</li>
+      <li>🦠 Limpeza preventiva com foco em redução de agentes infecciosos</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/maykpnda" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="_replyto" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+    <a href="https://wa.me/5521983207868" class="btn-whatsapp">💬 Enviar pelo WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 LimpezaX — Limpeza que protege.</p>
+  </footer>
+
+  <a href="https://wa.me/5521983207868" class="whatsapp-float" target="_blank">💬</a>
+</body>
+</html>
