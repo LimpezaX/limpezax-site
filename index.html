@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LimpezaX - Limpeza que protege</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img src="assets/logo.png" alt="LimpezaX" class="logo">
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Limpeza que protege</h1>
+    <p class="lead">Unimos ciência e cuidado para transformar limpeza em prevenção de doenças.</p>
+    <a class="btn primary" href="https://wa.me/5521983207868?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LimpezaX." target="_blank">Fale com a gente</a>
+  </div>
+</section>
+
+<section class="prevention">
+  <div class="prevention-inner">
+    <h2>Limpeza é Prevenção</h2>
+    <div class="pre-grid">
+      <div class="pre-item">
+        <img src="assets/illus-bacteria.svg" alt="bacteria" class="illus">
+        <h3>Teclados</h3>
+        <p><strong>400×</strong> mais bactérias que um vaso sanitário</p>
+      </div>
+      <div class="pre-item">
+        <img src="assets/illus-virus.svg" alt="virus" class="illus">
+        <h3>Maçanetas</h3>
+        <p>Até <strong>30.000</strong> bactérias por cm² em superfícies de contato</p>
+      </div>
+      <div class="pre-item">
+        <img src="assets/illus-fungus.svg" alt="fungus" class="illus">
+        <h3>Vírus</h3>
+        <p>Podem permanecer ativos por até <strong>72 h</strong> em superfícies</p>
+      </div>
+    </div>
+    <p class="impact">Limpeza técnica reduz em até <strong>80%</strong> o risco de transmissão cruzada — menos afastamentos, mais produtividade.</p>
+    <p class="sources">Fontes: University of Arizona · NIH/NEJM · NSF · ISSA</p>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Nossos serviços</h2>
+  <div class="cards">
+    <div class="card"><h3>Limpeza e desinfecção</h3><p>Residencial e comercial</p></div>
+    <div class="card"><h3>Higienização técnica</h3><p>Clínicas, academias e condomínios</p></div>
+    <div class="card"><h3>Limpeza preventiva</h3><p>Planos regulares e protocolos</p></div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <h2>Fale com a gente</h2>
+  <p>📞 (21) 98320-7868 • ✉️ <a href="mailto:limpezax@gmail.com">limpezax@gmail.com</a></p>
+  <a class="btn secondary" href="https://wa.me/5521983207868?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LimpezaX.">Abrir WhatsApp</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2025 LimpezaX</div>
+    <div><a href="mailto:limpezax@gmail.com">limpezax@gmail.com</a></div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5521983207868?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LimpezaX." target="_blank">
+  <span class="icon">💬</span><span class="text">Fale conosco</span>
+</a>
+
+<script>
+// scroll reveal with dynamic motion
+const srItems = document.querySelectorAll('.pre-item, .card, .hero-inner');
+const sr = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('reveal'); }}); }, {threshold: 0.15});
+srItems.forEach(i=>sr.observe(i));
+// animate whatsapp float pulse
+window.addEventListener('load', ()=>{ const w = document.querySelector('.whatsapp-float'); w.classList.add('show'); setInterval(()=>{ w.animate([{transform:'scale(1)'},{transform:'scale(1.06)'},{transform:'scale(1)'}], {duration:2200}); }, 2400); });
+</script>
+</body>
+</html>
