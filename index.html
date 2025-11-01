@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LimpezaX — Limpeza que protege</title>
+  <meta name="description" content="LimpezaX é uma empresa de limpeza profissional com foco em saúde, biossegurança e prevenção de doenças.">
+  <link rel="icon" href="./logo.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero" style="background-image: url('./hero-bg.png');">
+    <div class="hero-inner">
+      <img src="./logo.png" alt="LimpezaX" class="logo">
+      <h1>Limpeza que protege</h1>
+      <p class="subtitle">Limpeza profissional com foco em saúde e prevenção de doenças — fundada por um médico.</p>
+      <a href="https://wa.me/5521983207868" class="btn-primary" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+
+  <main>
+    <section id="sobre" class="container">
+      <h2>Sobre a LimpezaX</h2>
+      <p class="lead">A LimpezaX é uma empresa de limpeza profissional no Centro do Rio de Janeiro (RJ). Fundada por um médico, transformamos a limpeza em uma ferramenta de promoção de saúde, unindo biossegurança, técnica e cuidado humano.</p>
+    </section>
+
+    <section id="servicos" class="container">
+      <h2>Nossos serviços</h2>
+      <div class="grid">
+        <div class="card"><div class="icon">🏠</div><h3>Limpeza e desinfecção</h3><p>Residencial e comercial com protocolos que reduzem microrganismos.</p></div>
+        <div class="card"><div class="icon">🏥</div><h3>Higienização técnica</h3><p>Clínicas, academias e condomínios com padrões de biossegurança.</p></div>
+        <div class="card"><div class="icon">🧫</div><h3>Limpeza preventiva</h3><p>Planos regulares para redução de agentes infecciosos.</p></div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="container">
+      <h2>Por que escolher a LimpezaX</h2>
+      <div class="grid-3">
+        <div class="feature"><strong>Conhecimento médico</strong><p>Protocolos baseados em ciência e saúde pública.</p></div>
+        <div class="feature"><strong>Equipe treinada</strong><p>Profissionais capacitados e com processos padronizados.</p></div>
+        <div class="feature"><strong>Produtos eficazes</strong><p>Produtos de alta eficiência com responsabilidade ambiental.</p></div>
+      </div>
+    </section>
+
+    <section id="contato" class="container contato">
+      <h2>Contato</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5521983207868">(21) 98320-7868</a></p>
+          <p><strong>Email:</strong> <a href="mailto:limpezax@gmail.com">limpezax@gmail.com</a></p>
+          <p><strong>Local:</strong> Centro, Rio de Janeiro (RJ)</p>
+        </div>
+        <div class="form-card">
+          <form action="https://formspree.io/f/maykpnda" method="POST" class="contact-form">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="_replyto" placeholder="Seu e-mail" required>
+            <input type="tel" name="telefone" placeholder="Telefone (opcional)">
+            <textarea name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Enviar mensagem</button>
+              <a href="https://wa.me/5521983207868" target="_blank" class="btn-whatsapp">Enviar pelo WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>© 2025 LimpezaX</div>
+      <div><a href="mailto:limpezax@gmail.com">limpezax@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5521983207868" target="_blank" aria-label="WhatsApp">💬 <span class="whatsapp-text">Fale conosco</span></a>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in-view'); });
+    }, {threshold:0.15});
+    document.querySelectorAll('.card, .feature, .container h2, .contact-card, .form-card, .whatsapp-float').forEach(el=>observer.observe(el));
+    // reveal whatsapp float after load
+    window.addEventListener('load', ()=>{ document.querySelector('.whatsapp-float').classList.add('in-view'); });
+  </script>
+</body>
+</html>
